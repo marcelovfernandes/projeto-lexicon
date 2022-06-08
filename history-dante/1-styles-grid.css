@@ -1,0 +1,53 @@
+/* Estilos para uso do grid em "1-index-dante-grid" */
+
+
+body {
+    height: 100%;
+    background-color: rgb(31, 201, 76);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+  html {
+    height: 100%;
+    background-color: rgb(145, 92, 33);
+  }
+
+  #main{
+      display: grid;
+      grid-template-columns: 30% 65%;
+      background-color: green;
+      height: 100%;
+  }
+  #tabela{
+      background-color: rgb(116, 116, 158);
+      /* Equivalente a mesclar células*/
+      /* grid-column-start: 1;
+      grid-column-end: 4; */
+      grid-column: 1;
+      height: 100%;
+  }
+  .Latim {
+    font-weight: 1000;
+  }
+  #corpo{
+      background-color: rgb(224, 154, 154);
+      grid-column: 2;
+      height: 100%;
+      padding: 1em;
+  }
+
+  #corpo div:nth-child(1) {
+    margin: 1.em;
+    margin-bottom: 2em;
+    padding: 1.em;
+    font-weight: 1000;
+    font-size: 1.5em;
+  }
+  #corpo div:nth-child(2) {
+    background-color: yellow;
+  }
+  #corpo div:nth-child(3) {
+    background-color: green;
+  }
+  #corpo div:nth-child(4) {
+    background-color: purple;
+  }

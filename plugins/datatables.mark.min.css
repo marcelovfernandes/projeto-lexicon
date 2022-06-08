@@ -1,0 +1,9 @@
+mark{
+    background: transparent;
+    color:brown;
+    font-weight: bold;
+}
+
+.mark, mark {
+    padding: 0;
+}

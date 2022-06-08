@@ -1,0 +1,157 @@
+body {
+    background-color: brown;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+} 
+
+/* .my-row1 {
+    height: 10vh;
+}
+
+.my-row2 {
+    height: 40vh;
+}
+
+.my-row3 {
+    height: 50vh;
+} */
+
+@media screen and (min-width: 576px) {
+body {
+    background-color: lightgreen;
+     }
+     .my-row1 {
+        height: 15vh;
+    }
+    
+    .my-row2 {
+        height: 70vh;
+    }
+    
+    .my-row3 {
+        height: 15vh;
+    }
+    }        
+    
+@media screen and (min-width: 768px) {
+body {
+    background-color: rgb(235, 144, 238);
+     }
+     .my-row1 {
+        height: 15vh;
+    }
+    
+    .my-row2 {
+        height: 70vh;
+    }
+    
+    .my-row3 {
+        height: 15vh;
+    }
+    } 
+
+@media screen and (min-width: 992px) {
+body {
+    background-color: rgb(133, 30, 47);
+     }
+     .my-row1 {
+        height: 15vh;
+    }
+    
+    .my-row2 {
+        height: 70vh;
+    }
+    
+    .my-row3 {
+        height: 15vh;
+    }
+    } 
+
+@media screen and (min-width: 1200px) {
+body {
+    background-color: rgb(28, 90, 182);
+     }
+     .my-row1 {
+        height: 15vh;
+    }
+    
+    .my-row2 {
+        height: 70vh;
+    }
+    
+    .my-row3 {
+        height: 15vh;
+    }
+    }
+
+
+  
+  
+  
+  /* #main{
+      display: grid;
+      grid-template-columns: 30% 65%;
+      background-color: green;
+      height: 100%;
+  }
+  #tabela{
+      background-color: rgb(116, 116, 158); */
+      /* Equivalente a mesclar células*/
+      /* grid-column-start: 1;
+      grid-column-end: 4; */
+      /* grid-column: 1;
+      height: 100%;
+  }
+  .Latim {
+    font-weight: 1000;
+  }
+  #corpo{
+      background-color: rgb(224, 154, 154);
+      grid-column: 2;
+      height: 100%;
+      padding: 1em;
+  } */
+
+  #corpo {
+    color: white;
+    padding: 1em;
+    font-weight: bold;
+
+}
+  
+  #corpo div:nth-child(1) {
+    color: black;
+    margin: 1em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    padding: 1em;
+    padding-left: 1em;
+    font-weight: 1000;
+    font-size: 1.5em;
+  }
+  #corpo div:nth-child(2) {
+    color: black;
+    background-color: yellow;
+    margin: 1em;
+    margin-bottom: 1em;
+    padding: 1em;
+    padding-left: 1em;
+    font-weight: 1000;
+    font-size: 1.5em;
+  }
+  #corpo div:nth-child(3) {
+    color: black;
+    background-color: rgb(139, 175, 216);
+    padding: 1em;
+  }
+  #corpo div:nth-child(4) {
+    color: black;
+    background-color: rgb(202, 99, 202);
+    padding: 1em;
+  }
+  #corpo div:nth-child(5) {
+    color: black;
+    background-color: rgb(187, 159, 68);
+    padding: 1em;
+  }
+
+
