@@ -6,45 +6,74 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
 
+<!-- Fontes do Fontawsome -->
+<link rel="stylesheet" href="../webfonts/all.min.css">
+
+<!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="../bootstrap4/1-bootstrap.min.css">
+
 <style>
 
     body{
         background-color: bisque;
     }
 
-    #title{
-        margin-top: 2em;
+    #title1{
+        margin-top: 1em;
         padding: 1em;
+        font-size: 2em;
+        font-weight: bold;
+    }
+    
+    #title2{
+        padding-left: 2em;
         font-size: 1.5em;
         font-weight: bold;
     }
 
     #corpo{
-        padding-left: 2em;
-        font-size: 1.2em;
+        padding-left: 3em;
+        font-size: 1.1em;
     }
 
     li{
         padding-bottom: 0.2em;
     }
 
+    #explain{
+        padding-top: 2em;
+        padding-left: 2em;
+    }
+
 </style>
 
 </head>
 <body>
-    
-    <div id="title">Testes</div>
+    <div id="title1">Projeto Lexicon</div>
+    <hr>
+
+    <div id="title2">Histórico</div>
     <hr>
 
     <div id="corpo">
-        <ul>
-            <li><a href="./templates-p14/projeto-14-orig.html" target="_blank">Projeto 14 (versão original)</a></li>
-            <li><a href="history-dante/1-index-dante-grid.html" target="_blank">Primeiro teste com grid</a></li>
-            <li><a href="./history-dante/2-projeto-14-adapt-internet.html" target="_blank">Uso de exemplo da internet</a></li>
-            <li><a href="./templates-p14/projeto-14-v-2.html" target="_blank">Projeto 14 (versão 2)</a></li>
-        </ul>
+        <ol>
+
+            <li><a href="history-dante/1-index-dante-grid.html" target="_blank">Tentativa original com o grid</a></li>
+
+            <li><a href="./templates-p14/projeto-14-v1.html" target="_blank">Experiência com Bootstrap: Projeto 14 (versão 1)</a></li>
+
+            <li><a href="./history-dante/2-projeto-14-adapt-internet.html" target="_blank">Uso de um exemplo da internet</a></li>
+
+            <li><a href="./templates-p14/projeto-14-v2-scroller.html" target="_blank">Projeto 14 (versão 2: com Scroller e Mark)</a> <span class="badge badge-success">Melhor</span></li>
+
+            <li><a href="./templates-p14/projeto-14-v3.html" target="_blank">Projeto 14 (versão 3)</a></li>
+
+        </ol>
     </div>
 <hr>
+
+<div id="explain">
+</div>
 
 
 </body>
