@@ -1,0 +1,119 @@
+
+<!-- Tabela original (com DataTables e Mark) -->
+
+
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Histórico: 1</title>
+
+<!-- Fontes do Fontawsome -->
+    <link rel="stylesheet" href="../webfonts/all.min.css">
+
+<!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="../bootstrap4/1-bootstrap.min.css">
+
+<!-- Datatables CSS, versão simplificada: -->
+    <link rel="stylesheet" href="../DataTables/datatables.min.css">
+ 
+<!-- Plugins -->
+    <link rel="stylesheet" href="../plugins/datatables.mark.min.css">
+
+  <style>
+      div.dataTables_wrapper {
+          margin: 0 auto;
+          padding: 4em;
+        }
+  </style>
+
+</head>
+
+<body>
+
+<!-- Container 1 -->
+
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col bg-dark text-center text-light p-3">Tabela original (com DataTables e Mark)</div>
+    </div>
+  </div>
+
+<!-- Container 2 -->
+
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col p-2">
+        
+        <table id="example" class="table table-sm table-striped thead-dark table-bordered table-hover"></table>
+
+      </div>
+    </div>
+  </div>
+
+<!-- Container 3 -->
+
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col bg-dark text-light text-center p-3">Rodapé
+      </div>
+    </div>
+  </div>
+
+
+<!-- scripts -->
+
+<!-- jQuery: -->
+    <script src="../jQuery/1-jquery-3.6.0.min.js"></script>
+
+<!-- Bootstrap JS: -->
+    <script src="../bootstrap4/2-bootstrap.bundle.min.js"></script>
+    
+<!-- Datatables JS, versão simplificada: -->
+    <script src="../DataTables/datatables.min.js"></script>
+
+<!-- Banco de dados: -->
+    <script src="../dados/database.js"></script>
+
+<!-- Plugins -->
+    <script src="../plugins/accent-neutralise.js"></script>
+    <script src="../plugins/mark.js(jquery.mark.min.js),datatables.mark.js"></script>
+
+    <script>
+      $(document).ready(function () {
+          $('#example').DataTable( {
+              data: dataSet2,
+              mark: true,
+              // dom: '<l><f>r<t><i>p',
+              columns: [
+                  {title: "Latim"},
+                  {title: "Português"},
+                  {title: "Inglês"},
+                  {title: "Francês"},
+                  {title: "Fonte"},
+                  ],
+              language: {
+                  lengthMenu: 'Mostrar _MENU_ registros',
+                  zeroRecords: 'Sem resultados para essa busca',
+                  info: "Mostrando de _START_ a _END_ de _TOTAL_ registros",
+                  infoEmpty: 'Sem registros',
+                  infoFiltered: '<br>(de um total de _MAX_ registros)',
+                  search: 'Buscar',
+                  decimal: ',',
+                  thousands: '.',
+                  paginate: {
+                      previous: "Anterior",
+                      next: "Seguinte"
+                  }
+              }
+          } );
+      });
+    </script>
+
+</body>
+
+</html>
