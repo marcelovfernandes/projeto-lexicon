@@ -51,7 +51,7 @@ function geraTable () {
         $("#example").DataTable({
             dom: '<f>t',
             data: data,
-            // mark: true,
+            mark: true,
             ordering: false,
             deferRender: true,
             // scrollCollapse: false,
