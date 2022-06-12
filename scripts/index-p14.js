@@ -6,7 +6,7 @@ $( document ).ready(function() {
 
 function geraTable () {
 
-        var data = dataSet2;
+        var data = dataSet1;
 
 		    for (var i = 1; i < data[0].length; i++) {
           document.getElementById("cabecalhoDinamico").innerHTML =

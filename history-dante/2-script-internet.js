@@ -9,7 +9,7 @@ $( document ).ready(function() {
 
 
 function geraTable () {
-        var data = dataSet2;
+        var data = dataSet1;
         // Essa variável foi importada do database.js no html na tag: <script src="./arquivos/database.js"></script> de acesso global
         
         // Gerador de Cabeálho
