@@ -74,7 +74,7 @@
 
   <div class="container-fluid">
     <div class="row">
-      <div class="col bg-dark text-center text-light p-3">Projeto 14 (versão 4: <em style="color: yellow;">sem os loopings do cabeçalho dinâmico e sem Scroller</em>)</div>
+      <div class="col bg-dark text-center text-light p-3">Projeto 14 (versão 4: com Scroller <em style="color: yellow;">e sem os loopings do cabeçalho dinâmico</em>)</div>
     </div>
   </div>
 
@@ -126,7 +126,11 @@
               data: dataSet2,
               mark: true,
               dom: '<f><t>',
+              deferRender: true,
               ordering: false,
+              info: false,
+              scroller: true,
+              paginate: true,
               scrollY: 400,
               scrollCollapse: false,
               columnDefs: [
