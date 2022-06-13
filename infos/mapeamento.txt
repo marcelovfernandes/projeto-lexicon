@@ -1,0 +1,47 @@
+Índices da tabela:
+            0 Português
+            1 Latim 	   
+            2 Inglês 	  	
+            3 Francês    
+            4 Fonte 
+
+-----------------------------------------------------------
+Opção 1 - default (buscando pelo português):
+    - Targets de invisibilidade: [1, 2, 3, 4]
+    - Ordem dos índices para as divs no resultado: 
+            0 Português
+            1 Latim 	   
+            2 Inglês 	  	
+            3 Francês    
+            4 Fonte 	  
+
+-----------------------------------------------------------
+Opção 2 (buscando pelo inglês):
+    - Targets de invisibilidade: [0, 1, 3, 4]
+    - Ordem dos índices para as divs no resultado: 
+            2 Inglês     
+            1 Latim 	   	
+            0 Português 	
+            3 Francês 	
+            4 Fonte 	 
+
+-----------------------------------------------------------
+Opção 3 (buscando pelo francês):
+    - Targets de invisibilidade: [0, 1, 2, 4]
+    - Ordem dos índices para as divs no resultado: 
+            3 Francês    
+            1 Latim 	   	
+            0 Português		
+            2 Inglês 	   	
+            4 Fonte 	   	
+
+-----------------------------------------------------------
+Opção 4 (buscando pelo latim):
+    - Targets de invisibilidade: [0, 2, 3, 4]
+    - Ordem dos índices para as divs no resultado: 
+            1 Latim      
+            0 Português 
+            2 Inglês 	  
+            3 Francês	
+            4 Fonte 	   
+

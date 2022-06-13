@@ -1,4 +1,4 @@
-// Fiz este teste eliminando os loopings de criação do cabeçalho dinâmico.
+// Fiz este teste eliminando os loopings de criação do cabeçalho dinâmico, para ter maior controle sobre a visibilidade das colunas conforme diferentes opções de busca (ver infos/mapeamento.txt)
 
 $( document ).ready(function() { 
     geraTable()
@@ -63,10 +63,14 @@ function geraTable () {
             paginate: true,
             scrollY: 400,
             info: false,
-            columns: [0],
 		        // columnDefs: [
 			      //   {targets: stringParaSearch, searchable: false }
 				    //   ],
+            columnDefs: [{
+                targets: [1, 2, 3, 4], //Opção 1 - default: ver infos/mapeamento.txt
+                visible: false,
+                searchable: false,
+            }],
             language: {
                 search: 'Buscar',
                 zeroRecords: 'Sem resultados para essa busca',
@@ -82,9 +86,12 @@ function geraTable () {
             '<div>' + data[3] + '</div>' + 
             '<div>Fonte: ' + data[4] + '</div>';
           });
-      };
+      }; //Opção 1 - default: ver infos/mapeamento.txt
 
 // Fim da função geraTable.
+
+
+
 
   // Nestas últimas linhas, usei a api row().data() do dataTables (https://datatables.net/reference/api/row().data())
   
