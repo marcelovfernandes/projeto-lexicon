@@ -51,7 +51,9 @@
         
                     <li><a href="./templates-p14/projeto-14-v3.html" target="_blank">Projeto 14 (versão 3): outras experiências de layout e responsividade (com Bootstrap)</a></li>
 
-                    <li><a href="./templates-p14/projeto-14-v4-scroller-sem-looping.html" target="_blank">Projeto 14 (versão 4: com Scroller e Mark): </em>teste sem os loopings (do cabeçalho dinâmico), preparado para diferentes opções de busca</a> <span class="badge badge-success">Melhor</span></li>
+                    <li><a href="./templates-p14/projeto-14-v4-scroller-sem-looping.html" target="_blank">Projeto 14 (versão 4: com Scroller e Mark): </em>teste sem os loopings (do cabeçalho dinâmico), preparado para diferentes opções de busca (usando <code>'destroy: true'</code> na inicialização do DataTable de cada língua <i>na mesma página</i>)</a></li>
+
+                    <li><a href="./templates-toggling/option1-default.html" target="_blank">Projeto 14 (versão 4: com Scroller e Mark): </em>teste sem os loopings (do cabeçalho dinâmico), preparado para diferentes opções de busca (inicializando o DataTables de cada língua numa página diferente)</a> <span class="badge badge-success">Melhor</span></li>
         
                 </ol>
             </div>
@@ -74,6 +76,7 @@
                     <li>A extensão Scroller não deixava quebrar as linhas mais longas (= <em>nowrap</em>); além disso, ao reduzirmos o tamanho da tela, ela colocava um scroll horizontal. O ideal era quebrar a linha e não ter scroll horizontal. Resolvi o problema com as dicas abaixo:
                         <ul><li><a href="https://stackoverflow.com/questions/57468216/how-can-i-disable-scrollx-in-dtdatatable" target="_blank">https://stackoverflow.com/questions/57468216/how-can-i-disable-scrollx-in-dtdatatable</a>.</li></ul>
                     </li>
+                    <li>Diferenças de performance com ou sem o uso do <code>destroy: true</code> na inicialização de DataTables diferentes dentro de uma mesma página. Sobre isso, ver: <a href="https://datatables.net/manual/tech-notes/3#Reason" target="_blank">https://datatables.net/manual/tech-notes/3#Reason</a>.</li>
                 </ul>
             </div>
         </div>
@@ -89,7 +92,6 @@
                         <li>Documentação: <a href="https://datatables.net/reference/option/#keytable" target="_blank">https://datatables.net/reference/option/#keytable</a>.</li>
                         </ul>
                     </li>
-                    <li>Botões para a seleção entre diferentes tipos de busca (pelo português, pelo, latim, etc.)</li>
                     <li>Continuação do layout e da responsividade.</li>
                 </ol>
             </div>

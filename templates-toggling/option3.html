@@ -1,11 +1,5 @@
 
-<!-- Projeto 14 (versão 2: com Scroller e Mark) 
-  
-  O Scroller é para melhorar a performance a filtragem, deixando-a mais rápida.
-  Documentação: https://datatables.net/extensions/scroller/ 
-  
-  O Mark é apenas para realçar as strings que estão sendo buscadas.
--->
+<!-- Página da Option 3: procurando pelo francês -->
 
 <!DOCTYPE html>
 <html lang="pt-br">
@@ -15,7 +9,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Histórico 7</title>
+    <title>Option 3: Français</title>
 
 <!-- Favicon -->
     <link rel="shortcut icon" href="../imagens/favicon.png" type="image/x-icon">
@@ -43,40 +37,21 @@
 
 <body>
 
-
-
-    
-
-    <!-- Container 1 -->
-
-    <!-- <div class="dropdown">
-      <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-expanded="false">
-        Dropdown button
-      </button>
-      <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-        <a id="link1" class="dropdown-item" href="#">Português</a>
-        <a id="link2" class="dropdown-item" href="#">English</a>
-        <a id="link3" class="dropdown-item" href="#">Français</a>
-        <a id="link4" class="dropdown-item" href="#">Latīnē</a>
-      </div>
-    </div> -->
-
-
+<!-- Container 1 -->
 
   <div class="container-fluid">
     <div class="row">
-      <div class="col bg-dark text-center text-light p-3">Projeto 14 - <em style="color:yellow; font-weight: bold;">versão com Scroller e Mark: </em><b style="color:rgb(237, 240, 194);">teste sem os loopings (do cabeçalho dinâmico)</b>
-      <p>(Usando um só documento, com <code><a href="https://datatables.net/manual/tech-notes/3#Reason" target="_blank">destroy: true</a></code> em cada inicialização do DataTables).</p></div>
+      <div class="col bg-dark text-center text-light p-3">Projeto 14 - <em style="color:yellow; font-weight: bold;">versão com Scroller e Mark: </em><b style="color:rgb(237, 240, 194);">teste sem os loopings (do cabeçalho dinâmico)</b><p>(Carregando páginas diferentes para cada língua, inicializando um DataTables em cada uma delas.)</p></div>
     </div>
   </div>
 
   <div class="container-fluid">
     <div class="row">
       <div class="col p-3 bg-dark text-center">
-        <a id="link1" class="btn btn-primary" href="#" role="button">Português</a>
-    <a id="link2" class="btn btn-danger" href="#" role="button">English</a>
-    <a id="link3" class="btn btn-success" href="#" role="button">Français</a>
-    <a id="link4" class="btn btn-info" href="#" role="button">Latīnē</a>
+        <a class="btn btn-primary btn-sm" href="option1-default.html" role="button">Português</a>
+        <a class="btn btn-danger btn-sm" href="option2.html" role="button">English</a>
+        <a class="btn btn-success" href="#" role="button">Français</a>
+        <a class="btn btn-info btn-sm" href="option4.html" role="button">Latīnē</a>
       </div>
     </div>
   </div>
@@ -131,7 +106,7 @@
     <script src="../DataTables/datatables.min.js"></script>
 
 <!-- Meu arquivo JS: -->
-    <script src="../scripts/index-p14-scroller-sem-looping.js"></script>
+    <script src="../scripts/option3.js"></script>
     <script src="../dados/database1.js"></script>
 
 <!-- Bootstrap para o Scroller -->
