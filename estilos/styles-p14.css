@@ -1,3 +1,6 @@
+/* Estilos aplicados para testar a responsividade: */
+
+
 body {
     background-color: brown;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -84,32 +87,7 @@ body {
     }
 
 
-  
-  
-  
-  /* #main{
-      display: grid;
-      grid-template-columns: 30% 65%;
-      background-color: green;
-      height: 100%;
-  }
-  #tabela{
-      background-color: rgb(116, 116, 158); */
-      /* Equivalente a mesclar células*/
-      /* grid-column-start: 1;
-      grid-column-end: 4; */
-      /* grid-column: 1;
-      height: 100%;
-  }
-  .Latim {
-    font-weight: 1000;
-  }
-  #corpo{
-      background-color: rgb(224, 154, 154);
-      grid-column: 2;
-      height: 100%;
-      padding: 1em;
-  } */
+/* Formatação das divs onde aparecem os resultados do registro clicado: */
 
   #corpo {
     color: white;
@@ -154,4 +132,14 @@ body {
     padding: 1em;
   }
 
+/* Estilo dos registros selecionados, após o clique */
 
+table.dataTable.table-hover>tbody>tr.selected:hover>* {
+    box-shadow: none;
+}
+
+table.dataTable>tbody>tr.selected>* {
+    box-shadow: none;
+    color: rgb(19, 9, 160);
+    font-weight: bold;
+}

@@ -38,9 +38,15 @@ $( document ).ready(function() {
                 zeroRecords: 'Petīta inventa non sunt.',
             }
           });
-          $('#example tbody').on('click', 'tr',function(){
+        $('#example tbody').on('click', 'tr',function(){
             let table = $('#example').DataTable();
             var data = table.row(this).data();
+            if ($(this).hasClass('selected')) {
+              $(this).removeClass('selected');
+              } else {
+              table.$('tr.selected').removeClass('selected');
+              $(this).addClass('selected');
+              };
             document.getElementById('corpo').innerHTML = 
             '<div>' + data[1] + '</div>' + 
             '<div>' + data[0] + '</div>' + 
@@ -48,12 +54,12 @@ $( document ).ready(function() {
             '<div>' + data[3] + '</div>' + 
             '<div>Fontes: ' + data[4] + '</div>';
           });
-          const d = new Date();
-          const dlocal = d.toLocaleDateString();
-          let tabletot = $('#example').DataTable();
-          let total = tabletot.rows().count();
-          let totalformatado = total.toLocaleString();
-          document.getElementById('num').innerHTML = 
+        const d = new Date();
+        const dlocal = d.toLocaleDateString();
+        let tabletot = $('#example').DataTable();
+        let total = tabletot.rows().count();
+        let totalformatado = total.toLocaleString();
+        document.getElementById('num').innerHTML = 
             '<div>Atualização dinâmica ' + '(' + dlocal + ')' + ':' + '</div>' +
             '<div style="color: yellow;">' + totalformatado + ' entradas' + '</div>';
       }; 
