@@ -1,6 +1,6 @@
 // Fiz este teste eliminando os loopings de criação do cabeçalho dinâmico, para ter maior controle sobre a visibilidade das colunas conforme diferentes opções de busca (ver infos/mapeamento.txt)
 
-// OPTION 1: buscando pelo inglês
+// OPTION 2: buscando pelo inglês
 
 // Tabela padrão: 
 
@@ -20,7 +20,8 @@ $( document ).ready(function() {
             dom: '<f>t',
             data: mydata,
             mark: true,
-            ordering: false,
+            // ordering: false,
+            order: [[2, 'asc']],
             deferRender: true,
             scrollCollapse: false,
             scroller: true,
