@@ -46,8 +46,17 @@ $( document ).ready(function() {
             '<div>' + data[0] + '</div>' + 
             '<div>' + data[2] + '</div>' + 
             '<div>' + data[3] + '</div>' + 
-            '<div>Fonte: ' + data[4] + '</div>';
+            '<div>Fontes: ' + data[4] + '</div>';
           });
+          const d = new Date();
+          const dlocal = d.toLocaleDateString();
+          let tabletot = $('#example').DataTable();
+          let total = tabletot.rows().count();
+          let totalformatado = total.toLocaleString();
+          document.getElementById('num').innerHTML = 
+            '<div>Atualização dinâmica ' + '(' + dlocal + ')' + ':' + '</div>' +
+            '<div style="color: yellow;">' + totalformatado + ' entradas' + '</div>';
       }; 
+
 
   
