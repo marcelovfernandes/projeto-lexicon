@@ -20,6 +20,7 @@ $( document ).ready(function() {
             dom: '<f>t',
             data: mydata,
             mark: true,
+            keys: true,
             // ordering: false,
             order: [[1, 'asc']],
             deferRender: true,
@@ -38,6 +39,21 @@ $( document ).ready(function() {
                 zeroRecords: 'Petīta inventa non sunt.',
             }
           });
+
+        $(document).keypress(function(event){
+            var keycode = (event.keyCode ? event.keyCode : event.which);
+            if(keycode == '13'){
+              document.getElementsByClassName("focus")[0].click();	
+            }
+          });
+
+        $(document.querySelector("#example_filter > label > input")).keypress(function(event){
+            var keycode = (event.keyCode ? event.keyCode : event.which);
+            if(keycode == '13'){
+              document.querySelector("#example > tbody > tr:nth-child(1)").click()
+            }
+        });
+
         $('#example tbody').on('click', 'tr',function(){
             let table = $('#example').DataTable();
             var data = table.row(this).data();

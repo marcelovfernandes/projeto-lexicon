@@ -143,3 +143,12 @@ table.dataTable>tbody>tr.selected>* {
     color: rgb(19, 9, 160);
     font-weight: bold;
 }
+
+/* Estilo do foco nos registros */
+
+table.dataTable tbody th.focus,table.dataTable tbody td.focus{
+    background-color: #40b981;
+      color: white;
+      outline: 2px solid #276849;
+      border-radius: 5px;
+    }
